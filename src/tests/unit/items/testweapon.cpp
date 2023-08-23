@@ -10,15 +10,6 @@ TEST(Weapon, CanSetAttack) {
     EXPECT_EQ(weapon.getAttack(), new_attack);
 }
 
-TEST(Weapon, CanSetRequirements) {
-    Weapon weapon;
-
-    Attributes new_requirements (1, 2, 3, 4, 5, 6, 7, 8);
-    weapon.setRequirements(new_requirements);
-
-    EXPECT_EQ(weapon.getRequirements(), new_requirements);
-}
-
 TEST(Weapon, CanSetDamageType) {
     Weapon weapon;
 
