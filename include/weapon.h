@@ -19,7 +19,6 @@ class Weapon : public Entity {
         private:
             int _attack;
             Entity _damageType;
-
 };
 
 #endif
