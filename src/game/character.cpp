@@ -3,14 +3,8 @@
 
 // Constructor
 Character::Character() {
-    this->setId("C-000");
-    this->setName("Character");
-    this->setDescription("A character");
     this->setMaxHealth(100);
     this->setHealth(this->_max_health);
-    this->setAttributes(Attributes(0,0,0,0,0,0,0,0));
-    //TODO set default class
-    //TODO set default race
 }
 
 // Observers
@@ -26,11 +20,11 @@ Attributes Character::getAttributes() const {
     return this->_attributes;
 }
 
-Archtype Character::getClass() const {
+Archetype Character::getClass() const {
     return this->_class;
 }
 
-Archtype Character::getRace() const {
+Archetype Character::getRace() const {
     return this->_race;
 }
 
@@ -48,10 +42,10 @@ void Character::setAttributes(Attributes new_attributes) {
     this->_attributes = new_attributes;
 }
 
-void Character::setClass(Archtype new_class) {
+void Character::setClass(Archetype new_class) {
     this->_class = new_class;
 }
 
-void Character::setRace(Archtype new_race) {
+void Character::setRace(Archetype new_race) {
     this->_race = new_race;
 }

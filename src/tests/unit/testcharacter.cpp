@@ -1,18 +1,6 @@
 #include <gtest/gtest.h>
 #include <character.h>
 
-TEST(Character, HasDefaultId) {
-    EXPECT_EQ(Character().getId().empty(), false);
-}
-
-TEST(Character, HasDefaultName) {
-    EXPECT_EQ(Character().getName().empty(), false);
-}
-
-TEST(Character, HasDefaultDescription) {
-    EXPECT_EQ(Character().getDescription().empty(), false);
-}
-
 TEST(Character, StartsAtMaxHealth) {
     Character character;
 
@@ -90,7 +78,7 @@ TEST(Character, CanSetAttributes) {
 
 TEST(Character, CanSetClass) {
     Character character;
-    Archtype character_class;
+    Archetype character_class;
 
     character_class.setId("AC-000");
 
@@ -102,7 +90,7 @@ TEST(Character, CanSetClass) {
 
 TEST(Character, CanSetRace) {
     Character character;
-    Archtype character_race;
+    Archetype character_race;
 
     character_race.setId("AR-000");
 

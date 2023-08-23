@@ -1,18 +1,6 @@
 #include <gtest/gtest.h>
 #include <entity.h>
 
-TEST(Entity, HasDefaultId) {
-    EXPECT_EQ(Entity().getId().empty(), false);
-}
-
-TEST(Entity, HasDefaultName) {
-    EXPECT_EQ(Entity().getName().empty(), false);
-}
-
-TEST(Entity, HasDefaultDescription) {
-    EXPECT_EQ(Entity().getDescription().empty(), false);
-}
-
 TEST(Entity, CanSetAnId) {
     Entity entity;
     std::string new_id = "An Id";
@@ -29,15 +17,6 @@ TEST(Entity, CanSetName) {
     entity.setName(new_name);
 
     EXPECT_EQ(entity.getName(), new_name);
-}
-
-TEST(Entity, CanSetDescription) {
-    Entity entity;
-    std::string new_description = "A Description";
-
-    entity.setDescription(new_description);
-
-    EXPECT_EQ(entity.getDescription(), new_description);
 }
 
 TEST(Entity, EntitiesWithSameIdAreSameEntity) {

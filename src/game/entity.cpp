@@ -1,11 +1,7 @@
 #include <entity.h>
 
 // Constructor
-Entity::Entity(){
-    this->setId("E-000");
-    this->setName("The Entity");
-    this->setDescription("A thing that should never be seen...");
-}
+Entity::Entity(){}
 
 // Observers
 std::string Entity::getId() const{
@@ -14,10 +10,6 @@ std::string Entity::getId() const{
 
 std::string Entity::getName() const{
     return this->_name;
-}
-
-std::string Entity::getDescription() const{
-    return this->_description;
 }
 
 // Logical
@@ -36,8 +28,4 @@ void Entity::setId(std::string new_id){
 
 void Entity::setName(std::string new_name){
     this->_name = new_name;
-}
-
-void Entity::setDescription(std::string new_description){
-    this->_description = new_description;
 }

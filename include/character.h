@@ -3,7 +3,7 @@
 
 #include <string>
 #include <entity.h>
-#include <archtype.h>
+#include <archetype.h>
 
 class Character : public  Entity {
     public:
@@ -14,8 +14,8 @@ class Character : public  Entity {
         int getMaxHealth() const;
         int getHealth() const;
         Attributes getAttributes() const;
-        Archtype getClass() const;
-        Archtype getRace() const;
+        Archetype getClass() const;
+        Archetype getRace() const;
 
 
 
@@ -23,16 +23,16 @@ class Character : public  Entity {
         void setMaxHealth(int new_max_health);
         void setHealth(int new_health);
         void setAttributes(Attributes new_attributes);
-        void setClass(Archtype new_class);
-        void setRace(Archtype new_race);
+        void setClass(Archetype new_class);
+        void setRace(Archetype new_race);
 
     private:
         int _max_health;
         int _health;
 
         Attributes _attributes;
-        Archtype _class;
-        Archtype _race;
+        Archetype _class;
+        Archetype _race;
 };
 
 #endif

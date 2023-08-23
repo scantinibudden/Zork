@@ -1,13 +1,13 @@
-#ifndef ARCHTYPE_HH
-#define ARCHTYPE_HH
+#ifndef ARCHETYPE_HH
+#define ARCHETYPE_HH
 
 #include <entity.h>
 #include <attributes.h>
 
-class Archtype : public Entity {
+class Archetype : public Entity {
     public:
         // Constructor
-        Archtype();
+        Archetype();
         
         // Observers
         Attributes getAttributes() const;
